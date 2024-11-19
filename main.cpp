@@ -30,6 +30,7 @@ void displayBoard() {
             cout << "-----" << endl;
         }
     }
+}
 
   // Function to check for a win condition
 
