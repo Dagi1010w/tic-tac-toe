@@ -14,12 +14,6 @@ void initBoard() {
     
 }
 
-int main() {
-    initBoard(); // Initialize the game board1
-    playGame();
-    return 0;
-}
-
 // Function to display the game board
 
 void displayBoard() {
@@ -36,11 +30,6 @@ void displayBoard() {
             cout << "-----" << endl;
         }
     }
-
-
-
-
-
 
   // Function to check for a win condition
 
@@ -62,7 +51,6 @@ bool checkWin(char player) {
     return false;
 }
 
-
 // Function to switch players
 
 char switchPlayer(char currentPlayer){
@@ -72,6 +60,7 @@ char switchPlayer(char currentPlayer){
  // Main game loop
 
  void playGame() {
+     char currentPlayer='O';
     while (true) {
         displayBoard();
         int row, col;
@@ -94,3 +83,8 @@ char switchPlayer(char currentPlayer){
     }
 }
 
+int main() {
+    initBoard(); // Initialize the game board1
+    playGame();
+    return 0;
+}
